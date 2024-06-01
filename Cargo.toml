@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/holo-hold-backend"
+]
+resolver = "2"

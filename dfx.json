@@ -1,0 +1,38 @@
+{
+  "canisters": {
+    "holo-hold-backend": {
+      "candid": "src/holo-hold-backend/holo-hold-backend.did",
+      "package": "holo-hold-backend",
+      "type": "rust"
+    },
+    "holo-hold-frontend": {
+      "dependencies": [
+        "holo-hold-backend"
+      ],
+      "source": [
+        "src/holo-hold-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "holo-hold-frontend"
+    },
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
