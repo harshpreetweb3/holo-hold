@@ -1,5 +1,10 @@
 {
   "canisters": {
+    "icrc1_ledger_canister": {
+      "type": "custom",
+      "candid": "https://raw.githubusercontent.com/dfinity/ic/ec35ebd252d4ffb151d2cfceba3a86c4fb87c6d6/rs/rosetta-api/icrc1/ledger/ledger.did",
+      "wasm": "https://download.dfinity.systems/ic/ec35ebd252d4ffb151d2cfceba3a86c4fb87c6d6/canisters/ic-icrc1-ledger.wasm.gz"
+    },
     "holo-hold-backend": {
       "candid": "src/holo-hold-backend/holo-hold-backend.did",
       "package": "holo-hold-backend",
